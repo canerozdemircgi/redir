@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang='en-US'>
+
+<head>
+
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+
+<body>
+
+<script defer>
+const redirs =
+{
+'Portfolio-Details-_-Caner-Özdemir.docx': 'https://docs.google.com/document/d/1UTpq7feIcWYnT_VpibpF7dhxlX0vE5Xp/edit?usp=share_link&ouid=103263573971968198258&rtpof=true&sd=true'
+};
+const key = decodeURIComponent(window.location.href.substring(window.location.href.indexOf('?') + 1));
+if (redirs.hasOwnProperty(key))
+	window.location.replace(redirs[key]);
+else
+	document.body.insertAdjacentHTML('beforeend', '<h2>fast redirect shortener service of Caner Özdemir</h2>');
+</script>
+
+</body>
+
+</html>

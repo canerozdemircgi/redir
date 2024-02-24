@@ -1,0 +1,6 @@
+*.editorconfig
+*.gitignore
+*.html
+*.md
+*.txt
+*.url
