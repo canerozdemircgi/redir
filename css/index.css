@@ -1,0 +1,61 @@
+:root
+{
+	--background-color: #202020;
+	--foreground-color: #f0f0f0;
+	--selection-color: #f0f080;
+	--error-color: #ff4040;
+}
+
+*
+{
+	box-sizing: border-box;
+	max-height: 999999px;
+	font: inherit;
+	letter-spacing: 0.125px;
+}
+
+body
+{
+	text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+
+	font: 16px 'Roboto', sans-serif;
+	line-height: 1;
+
+	margin: 0;
+	height: 100vh;
+
+	background-color: var(--background-color);
+	color: var(--foreground-color);
+
+	display: grid;
+	grid-template-rows: max-content max-content;
+	justify-items: center;
+	align-content: center;
+}
+
+::selection
+{
+	background-color: var(--selection-color);
+	color: var(--background-color);
+}
+
+br::selection
+{
+	background-color: transparent;
+	color: transparent;
+}
+
+.error_span
+{
+	color: var(--error-color);
+}
+
+br
+{
+	content: '';
+	display: block;
+
+	line-height: 0;
+	margin-bottom: 20px;
+}
